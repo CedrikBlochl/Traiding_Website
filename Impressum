@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101410">
+
+    <title>Impressum | krypta.</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background: #101410;
+            color: #f0f2ed;
+            font-family: "DM Sans", Arial, sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 50px auto;
+        }
+
+        .brand {
+            color: #a7ec61;
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+            color: #f0f2ed;
+        }
+
+        .subtitle {
+            color: #929b92;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #171c18;
+            border: 1px solid #2a322c;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #a7ec61;
+            font-size: 17px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #c2c9c0;
+            margin: 7px 0;
+        }
+
+        a {
+            color: #a7ec61;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 11px 20px;
+            background: #a7ec61;
+            color: #101410;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+
+        .back:hover {
+            background: #c1f58b;
+            text-decoration: none;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #2a322c;
+            color: #778177;
+            font-size: 12px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            .container {
+                margin: 25px auto;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .card {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="brand">krypta.</div>
+
+        <h1>Impressum</h1>
+        <p class="subtitle">
+            Angaben zum Schulprojekt krypta.
+        </p>
+
+        <section class="card">
+            <h2>Projektverantwortliche</h2>
+
+            <p><strong>Cedrik Blöchl</strong></p>
+            <p><strong>Markus Falkner</strong></p>
+
+            <p>Projekt: krypta.</p>
+            <p>Art: Schulprojekt / Prototyp</p>
+            <p>Ort: [Projektort ergänzen]</p>
+        </section>
+
+        <section class="card">
+            <h2>Kontakt</h2>
+
+            <p>
+                E-Mail:
+                [Gemeinsame Projekt- oder Schul-E-Mail-Adresse ergänzen]
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Über dieses Projekt</h2>
+
+            <p>
+                krypta. ist ein Schulprojekt und eine
+                Informationsplattform rund um Kryptowährungen.
+                Die Website dient ausschließlich Lern- und
+                Informationszwecken.
+            </p>
+
+            <p>
+                Es werden keine echten Handelsgeschäfte
+                durchgeführt und keine Finanzdienstleistungen
+                angeboten.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Haftungsausschluss</h2>
+
+            <p>
+                Die Inhalte dieser Website wurden im Rahmen
+                eines Schulprojekts erstellt.
+                Trotz sorgfältiger Bearbeitung übernehmen
+                wir keine Gewähr für die Richtigkeit,
+                Vollständigkeit oder Aktualität der Inhalte.
+            </p>
+
+            <p>
+                Die dargestellten Informationen stellen
+                keine Anlageberatung und keine Aufforderung
+                zum Kauf oder Verkauf von Kryptowährungen dar.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Urheberrecht</h2>
+
+            <p>
+                Die erstellten Inhalte und Gestaltungselemente
+                dieser Website unterliegen dem Urheberrecht.
+                Eine Verwendung außerhalb der gesetzlichen
+                Grenzen bedarf der Zustimmung der jeweiligen
+                Rechteinhaber.
+            </p>
+        </section>
+
+        <a href="index.html" class="back">
+            ← Zurück zur Startseite
+        </a>
+
+        <footer>
+            © 2026 krypta. – Schulprojekt Cedrik Blöchl
+            und Markus Falkner.
+        </footer>
+
+    </main>
+
+</body>
+</html>
