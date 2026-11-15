@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Meine Trading-Webseite</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    th,
+    td {
+      border: 1px solid gray;
+      padding: 8px;
+      text-align: left;
+    }
+
+    input {
+      padding: 4px;
+    }
+
+    button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Meine Trading-Webseite</h1>
+  <p>Hier findest du eine einfache Übersicht über Kryptowährungen.</p>
+  <p>Hinweis: Das sind nur Beispielpreise und keine Live-Kurse.</p>
+
+  <h2>Kryptowährungen</h2>
+  <label>Suchen: <input id="suche" oninput="suchen()" placeholder="Name eingeben"></label>
+
+  <table id="tabelle">
+    <tr>
+      <th>Name</th>
+      <th>Symbol</th>
+      <th>Preis</th>
+      <th>Favorit</th>
+      <th>Information</th>
+    </tr>
+    <tr>
+      <td>Bitcoin</td>
+      <td>BTC</td>
+      <td>65000 €</td>
+      <td><button onclick="favorit('Bitcoin')">Favorit</button></td>
+      <td><button onclick="ansehen('Bitcoin')">Ansehen</button></td>
+    </tr>
+    <tr>
+      <td>Ethereum</td>
+      <td>ETH</td>
+      <td>3200 €</td>
+      <td><button onclick="favorit('Ethereum')">Favorit</button></td>
+      <td><button onclick="ansehen('Ethereum')">Ansehen</button></td>
+    </tr>
+    <tr>
+      <td>Solana</td>
+      <td>SOL</td>
+      <td>150 €</td>
+      <td><button onclick="favorit('Solana')">Favorit</button></td>
+      <td><button onclick="ansehen('Solana')">Ansehen</button></td>
+    </tr>
+  </table>
+
+  <h2>Meine Favoriten</h2>
+  <ul id="favoriten">
+    <li>Noch keine Favoriten.</li>
+  </ul>
+
+  <h2>Informationen</h2>
+  <p id="info">Klicke bei einer Kryptowährung auf „Ansehen“.</p>
+
+  <script>
+    let favoriten = [];
+
+    function suchen() {
+      let text = document.getElementById('suche').value.toLowerCase();
+      let zeilen = document.querySelectorAll('#tabelle tr');
+      for (let i = 1; i < zeilen.length; i++) {
+        zeilen[i].style.display = zeilen[i].innerText.toLowerCase().includes(text) ? '' : 'none';
+      }
+    }
+
+    function favorit(name) {
+      if (!favoriten.includes(name)) favoriten.push(name);
+      document.getElementById('favoriten').innerHTML = favoriten.map(x => '<li>' + x + '</li>').join('');
+    }
+
+    function ansehen(name) {
+      document.getElementById('info').innerText = name + ' ist eine Kryptowährung. Die angezeigten Preise sind Beispiele.';
+    }
+  </script>
+</body>
+
+</html>
