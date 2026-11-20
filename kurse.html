@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Echte Kryptokurse über die CoinPaprika REST-API">
+  <title>Kurse | TradeBasics</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Hauptnavigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><span class="brand-icon">T</span>TradeBasics</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Menü öffnen">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto gap-lg-2"><li class="nav-item"><a class="nav-link "  href="index.html">Startseite</a></li>
+<li class="nav-item"><a class="nav-link active" aria-current="page" href="kurse.html">Kurse</a></li>
+<li class="nav-item"><a class="nav-link "  href="kontakt.html">Kontakt</a></li>
+<li class="nav-item"><a class="nav-link "  href="impressum.html">Impressum</a></li>
+<li class="nav-item"><a class="nav-link "  href="datenschutz.html">Datenschutz</a></li></ul>
+      </div>
+    </div>
+  </nav>
+  <main class="flex-grow-1">
+    <section class="page-header"><div class="container"><h1>Kryptokurse</h1><p class="text-muted-custom mb-0">Drei bekannte Kryptowährungen im Überblick. Die Daten kommen von der CoinPaprika-API.</p></div></section>
+    <section class="section-padding"><div class="container">
+      <div class="d-flex flex-wrap gap-3 justify-content-between align-items-center mb-4"><div><h2 class="h4 fw-bold mb-1">Aktuelle Marktdaten</h2><p class="small-note mb-0" id="last-updated" aria-live="polite">Kursdaten werden geladen.</p></div><button class="btn btn-outline-primary" id="reload-button" type="button">↻ Kurse neu laden</button></div>
+      <div class="row g-4" id="coin-list" aria-live="polite"><div class="col-12"><p>Kurse werden geladen …</p></div></div>
+      <div class="alert alert-light border mt-4 mb-0"><strong>Hinweis:</strong> Die Kurse werden in US-Dollar angezeigt, können zeitverzögert sein und dienen nur zur Information. Hier kann man keine Kryptowährungen kaufen oder verkaufen.</div>
+      <p class="small-note mt-3 mb-0">Datenquelle: <a href="https://coinpaprika.com/" target="_blank" rel="noopener noreferrer">CoinPaprika</a>. Für die Anzeige verwenden wir JavaScript mit <code>fetch()</code>.</p>
+    </div></section>
+  </main>
+  <footer>
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2 align-items-md-center">
+      <div><strong class="text-white">TradeBasics</strong><br><small>Schulprojekt · Keine Anlageberatung · Kein echter Handel</small></div>
+      <div class="d-flex gap-3 flex-wrap"><a href="kontakt.html">Kontakt</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
