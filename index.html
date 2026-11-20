@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Trading-Webseite</title>
+
+    <!-- Verbindung zur CSS-Datei -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Meine Trading-Webseite</h1>
+    <p>Hier findest du eine einfache Übersicht über Kryptowährungen.</p>
+    <p>Hinweis: Das sind nur Beispielpreise und keine Live-Kurse.</p>
+
+    <h2>Kryptowährungen</h2>
+
+    <p>
+        <label for="suche">Suchen:</label>
+        <input type="text" id="suche" placeholder="Name eingeben">
+    </p>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Preis</th>
+            <th>Favorit</th>
+            <th>Information</th>
+        </tr>
+
+        <tr>
+            <td>Bitcoin</td>
+            <td>BTC</td>
+            <td>65000 €</td>
+            <td><button onclick="favoritHinzufuegen('Bitcoin')">Favorit</button></td>
+            <td><button onclick="infoAnzeigen('Bitcoin')">Ansehen</button></td>
+        </tr>
+
+        <tr>
+            <td>Ethereum</td>
+            <td>ETH</td>
+            <td>3200 €</td>
+            <td><button onclick="favoritHinzufuegen('Ethereum')">Favorit</button></td>
+            <td><button onclick="infoAnzeigen('Ethereum')">Ansehen</button></td>
+        </tr>
+
+        <tr>
+            <td>Solana</td>
+            <td>SOL</td>
+            <td>150 €</td>
+            <td><button onclick="favoritHinzufuegen('Solana')">Favorit</button></td>
+            <td><button onclick="infoAnzeigen('Solana')">Ansehen</button></td>
+        </tr>
+    </table>
+
+    <h2>Meine Favoriten</h2>
+    <ul id="favoriten">
+        <li>Noch keine Favoriten.</li>
+    </ul>
+
+    <h2>Informationen</h2>
+    <p id="informationen">Klicke bei einer Kryptowährung auf "Ansehen".</p>
+
+    <!-- Verbindung zur JavaScript-Datei -->
+    <script src="script.js"></script>
+</body>
+</html>
 
