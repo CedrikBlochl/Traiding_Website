@@ -1,0 +1,45 @@
+/* Einfache Gestaltung der Webseite */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+h1, h2 {
+    margin-top: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+input {
+    padding: 6px;
+}
+
+/* Kleine Anpassung für Smartphones */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+}
