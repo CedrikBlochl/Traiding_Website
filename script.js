@@ -6,8 +6,8 @@ function anzeigen(name, symbol, preis, logo, button) {
     document.getElementById("symbol").innerText = symbol;
     document.getElementById("preis").innerText = preis;
 
-    // Bild aus dem Ordner Bilder laden
-    document.getElementById("bild").src = "Bilder/" + logo;
+    // Bild aus dem Ordner bilder laden
+    document.getElementById("bild").src = "bilder/" + logo;
 
     // Alte Auswahl entfernen
     document.querySelectorAll(".coin").forEach(function(coin) {
