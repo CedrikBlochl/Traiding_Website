@@ -1,19 +1,20 @@
 
-// Wird aufgerufen, wenn du eine Kryptowährung auswählst.
+// Kryptowährung auswählen
 function anzeigen(name, symbol, preis, logo, button) {
 
+    // Informationen ändern
     document.getElementById("name").innerText = name;
     document.getElementById("symbol").innerText = symbol;
     document.getElementById("preis").innerText = preis;
 
-    // Bild aus dem Ordner bilder laden
+    // Passendes Logo anzeigen
     document.getElementById("bild").src = "bilder/" + logo;
 
-    // Alte Auswahl entfernen
+    // Vorherige Auswahl entfernen
     document.querySelectorAll(".coin").forEach(function(coin) {
         coin.classList.remove("aktiv");
     });
 
-    // Neue Auswahl markieren
+    // Ausgewählte Kryptowährung markieren
     button.classList.add("aktiv");
 }
