@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -19,17 +20,19 @@
 
         <div class="auswahl">
             <button class="coin aktiv" onclick="anzeigen('Bitcoin', 'BTC', '65.000 €', 'bitcoin.svg', this)">
-                <img src="logos/bitcoin.svg" alt="Bitcoin-Logo">
+                <img src="Bilder/bitcoin.svg" alt="Bitcoin-Logo">
                 <span class="coindaten"><strong>Bitcoin</strong><small>BTC</small></span>
                 <b>65.000 €</b>
             </button>
+
             <button class="coin" onclick="anzeigen('Ethereum', 'ETH', '3.200 €', 'ethereum.svg', this)">
-                <img src="logos/ethereum.svg" alt="Ethereum-Logo">
+                <img src="Bilder/ethereum.svg" alt="Ethereum-Logo">
                 <span class="coindaten"><strong>Ethereum</strong><small>ETH</small></span>
                 <b>3.200 €</b>
             </button>
+
             <button class="coin" onclick="anzeigen('Solana', 'SOL', '150 €', 'solana.svg', this)">
-                <img src="logos/solana.svg" alt="Solana-Logo">
+                <img src="Bilder/solana.svg" alt="Solana-Logo">
                 <span class="coindaten"><strong>Solana</strong><small>SOL</small></span>
                 <b>150 €</b>
             </button>
@@ -40,18 +43,21 @@
                 <span>Ausgewählte Kryptowährung</span>
                 <span class="demo">BEISPIELDATEN</span>
             </div>
+
             <div class="details">
-                <img id="bild" src="logos/bitcoin.svg" alt="Ausgewählte Kryptowährung">
+                <img id="bild" src="Bilder/bitcoin.svg" alt="Ausgewählte Kryptowährung">
                 <div>
                     <h2 id="name">Bitcoin</h2>
                     <p id="symbol">BTC</p>
                 </div>
             </div>
+
             <p class="preistitel">Beispielpreis</p>
             <p id="preis" class="preis">65.000 €</p>
             <p class="hinweis">Die Preise sind feste Beispielzahlen und keine Live-Kurse.</p>
         </section>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
