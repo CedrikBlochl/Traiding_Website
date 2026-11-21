@@ -9,31 +9,44 @@
 </head>
 <body>
     <header>
-        <div class="marke"><span class="markenzeichen">↗</span> trading-webseite</div>
+        <div class="marke">
+            <span class="markenzeichen">↗</span> trading-webseite
+        </div>
         <span class="kopftext">Marktübersicht</span>
     </header>
 
     <main>
         <p class="klein">DEIN TRADING-DASHBOARD</p>
         <h1>Kryptowährungen</h1>
-        <p class="beschreibung">Wähle eine Kryptowährung aus, um ihre Informationen anzusehen.</p>
+        <p class="beschreibung">
+            Wähle eine Kryptowährung aus, um ihre Informationen anzusehen.
+        </p>
 
         <div class="auswahl">
             <button class="coin aktiv" onclick="anzeigen('Bitcoin', 'BTC', '65.000 €', 'bitcoin.svg', this)">
                 <img src="Bilder/bitcoin.svg" alt="Bitcoin-Logo">
-                <span class="coindaten"><strong>Bitcoin</strong><small>BTC</small></span>
+                <span class="coindaten">
+                    <strong>Bitcoin</strong>
+                    <small>BTC</small>
+                </span>
                 <b>65.000 €</b>
             </button>
 
             <button class="coin" onclick="anzeigen('Ethereum', 'ETH', '3.200 €', 'ethereum.svg', this)">
                 <img src="Bilder/ethereum.svg" alt="Ethereum-Logo">
-                <span class="coindaten"><strong>Ethereum</strong><small>ETH</small></span>
+                <span class="coindaten">
+                    <strong>Ethereum</strong>
+                    <small>ETH</small>
+                </span>
                 <b>3.200 €</b>
             </button>
 
             <button class="coin" onclick="anzeigen('Solana', 'SOL', '150 €', 'solana.svg', this)">
                 <img src="Bilder/solana.svg" alt="Solana-Logo">
-                <span class="coindaten"><strong>Solana</strong><small>SOL</small></span>
+                <span class="coindaten">
+                    <strong>Solana</strong>
+                    <small>SOL</small>
+                </span>
                 <b>150 €</b>
             </button>
         </div>
@@ -54,7 +67,10 @@
 
             <p class="preistitel">Beispielpreis</p>
             <p id="preis" class="preis">65.000 €</p>
-            <p class="hinweis">Die Preise sind feste Beispielzahlen und keine Live-Kurse.</p>
+
+            <p class="hinweis">
+                Die Preise sind feste Beispielzahlen und keine Live-Kurse.
+            </p>
         </section>
     </main>
 
