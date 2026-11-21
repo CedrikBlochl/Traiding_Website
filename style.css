@@ -1,45 +1,37 @@
-/* Einfache Gestaltung der Webseite */
+/* Grunddesign */
+* { box-sizing: border-box; }
+body { margin: 0; background: #f7f8fb; color: #192339; font-family: Arial, sans-serif; }
+header { height: 74px; background: white; border-bottom: 1px solid #e7ebf1; display: flex; align-items: center; justify-content: space-between; padding: 0 6%; }
+.marke { display: flex; align-items: center; gap: 11px; font-size: 19px; font-weight: bold; }
+.markenzeichen { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 9px; background: #2563eb; color: white; font-size: 22px; }
+.kopftext { color: #8792a4; font-size: 14px; }
+main { max-width: 1070px; padding: 0 25px; margin: 70px auto; }
+.klein { color: #2864dd; font-size: 12px; font-weight: bold; letter-spacing: 1.4px; }
+h1 { font-size: 34px; margin: 11px 0; }
+.beschreibung { color: #748095; font-size: 15px; margin: 0 0 30px; }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 30px;
-}
+/* Auswahl der Kryptowährungen */
+.auswahl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px; }
+.coin { display: flex; align-items: center; gap: 13px; text-align: left; padding: 19px 18px; background: #fff; border: 1px solid #e3e8f0; border-radius: 12px; cursor: pointer; color: #192339; transition: border-color .15s, box-shadow .15s; }
+.coin:hover { border-color: #a3bdf4; box-shadow: 0 4px 12px #1d2b4810; }
+.coin.aktiv { border-color: #3777eb; box-shadow: 0 0 0 2px #3777eb12; }
+.coin img { width: 37px; height: 37px; object-fit: contain; }
+.coindaten strong, .coindaten small { display: block; }
+.coindaten strong { font-size: 14px; }
+.coindaten small { margin-top: 5px; color: #8490a2; }
+.coin b { margin-left: auto; font-size: 14px; white-space: nowrap; }
 
-h1, h2 {
-    margin-top: 25px;
-}
+/* Info-Karte */
+.karte { background: white; border: 1px solid #e4e9f0; border-radius: 14px; padding: 30px 34px; }
+.kartenkopf { display: flex; justify-content: space-between; align-items: center; color: #8290a4; font-size: 13px; }
+.demo { border-radius: 5px; background: #eff5ff; color: #3672d8; padding: 7px 10px; font-size: 11px; font-weight: bold; }
+.details { display: flex; align-items: center; gap: 15px; margin-top: 31px; }
+.details img { width: 49px; height: 49px; object-fit: contain; }
+.details h2 { margin: 0; font-size: 25px; }
+.details p { margin: 5px 0 0; color: #8b96a7; font-size: 14px; }
+.preistitel { margin: 33px 0 7px; color: #8b96a7; font-size: 14px; }
+.preis { margin: 0; font-size: 41px; font-weight: bold; letter-spacing: -1px; }
+.hinweis { margin: 28px 0 0; padding-top: 17px; border-top: 1px solid #eef1f5; color: #8c97a6; font-size: 13px; }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: left;
-}
-
-button {
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-input {
-    padding: 6px;
-}
-
-/* Kleine Anpassung für Smartphones */
-@media (max-width: 600px) {
-    body {
-        margin: 10px;
-    }
-
-    table {
-        font-size: 12px;
-    }
-
-    th, td {
-        padding: 5px;
-    }
-}
+/* Breite für PC-Ansicht */
+@media (max-width: 840px) { .auswahl { grid-template-columns: 1fr; } main { margin-top: 40px; } }
