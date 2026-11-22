@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum | trading-webseite</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #101014;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            height: 74px;
+            background: #19191f;
+            border-bottom: 1px solid #34343d;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 6%;
+        }
+
+        .marke {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .markenzeichen {
+            display: grid;
+            place-items: center;
+            width: 34px;
+            height: 34px;
+            border-radius: 9px;
+            background: #dc2626;
+            color: white;
+            font-size: 22px;
+        }
+
+        a {
+            color: #ef4444;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 65px auto;
+            padding: 0 25px;
+        }
+
+        .klein {
+            color: #ef4444;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1.4px;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin: 12px 0;
+        }
+
+        .beschreibung {
+            color: #a1a1aa;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
+        .karte {
+            background: #1c1c23;
+            border: 1px solid #34343d;
+            border-radius: 14px;
+            padding: 35px;
+        }
+
+        .bereich {
+            padding-bottom: 24px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #34343d;
+        }
+
+        .bereich:last-child {
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        h2 {
+            font-size: 19px;
+            border-left: 4px solid #dc2626;
+            padding-left: 12px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        .bereich p {
+            color: #b8b8c2;
+            font-size: 14px;
+        }
+
+        .personen {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .person {
+            background: #131318;
+            border: 1px solid #34343d;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .person small {
+            color: #ef4444;
+            font-weight: bold;
+        }
+
+        .person h3 {
+            margin: 12px 0 5px;
+            font-size: 18px;
+        }
+
+        .person p {
+            margin: 0;
+            color: #a1a1aa;
+        }
+
+        .zurueck {
+            display: inline-block;
+            margin-top: 25px;
+            background: #dc2626;
+            color: white;
+            padding: 13px 22px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .zurueck:hover {
+            background: #b91c1c;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            color: #777782;
+            font-size: 12px;
+            padding: 35px 0;
+        }
+
+        @media (max-width: 650px) {
+            .personen {
+                grid-template-columns: 1fr;
+            }
+
+            .karte {
+                padding: 23px;
+            }
+
+            main {
+                margin-top: 40px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .marke {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="marke">
+            <span class="markenzeichen">↗</span>
+            trading-webseite
+        </div>
+
+        <a href="index.html">Startseite</a>
+    </header>
+
+    <main>
+
+        <p class="klein">TRADING-WEBSEITE</p>
+        <h1>Impressum</h1>
+        <p class="beschreibung">
+            Informationen über unser Schulprojekt.
+        </p>
+
+        <section class="karte">
+
+            <div class="bereich">
+                <h2>Über das Projekt</h2>
+                <p>
+                    Diese Trading-Webseite wurde im Rahmen
+                    eines Schulprojekts erstellt.
+                    Sie zeigt Informationen über
+                    verschiedene Kryptowährungen.
+                </p>
+                <p>
+                    Alle angezeigten Preise sind Beispieldaten
+                    und keine echten Live-Kurse.
+                </p>
+            </div>
+
+            <div class="bereich">
+                <h2>Projektverantwortliche</h2>
+
+                <div class="personen">
+
+                    <div class="person">
+                        <small>ENTWICKLER 01</small>
+                        <h3>Cedrik Blöchl</h3>
+                        <p>Webentwicklung</p>
+                    </div>
+
+                    <div class="person">
+                        <small>ENTWICKLER 02</small>
+                        <h3>Markus Falkner</h3>
+                        <p>Webentwicklung</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bereich">
+                <h2>Kontakt</h2>
+                <p>
+                    Kontakt-E-Mail: [E-Mail eintragen]
+                </p>
+            </div>
+
+            <div class="bereich">
+                <h2>Haftungsausschluss</h2>
+                <p>
+                    Die Webseite dient ausschließlich
+                    schulischen und informativen Zwecken.
+                    Es handelt sich nicht um eine
+                    Finanz- oder Anlageberatung.
+                </p>
+            </div>
+
+            <div class="bereich">
+                <h2>Urheberrecht</h2>
+                <p>
+                    © 2026 Cedrik Blöchl und Markus Falkner.
+                    Erstellt als Schulprojekt.
+                </p>
+            </div>
+
+        </section>
+
+        <a class="zurueck" href="index.html">
+            ← Zurück zur Startseite
+        </a>
+
+        <footer>
+            © 2026 trading-webseite
+        </footer>
+
+    </main>
+
+</body>
+</html>
